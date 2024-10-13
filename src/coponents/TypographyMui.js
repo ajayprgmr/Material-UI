@@ -1,12 +1,10 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-
+import { Box, Typography, Divider } from '@mui/material'
 export default function TypographyMui() {
   return (
-    <Box sx={{ width: '100%', maxWidth: 500 }}>
+    <Box sx={{ width: '70%' }} display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
       <Typography variant="h1" gutterBottom>
-        h1. Heading
+        h1.Heading
       </Typography>
       <Typography variant="h2" gutterBottom>
         h2. Heading
@@ -52,6 +50,7 @@ export default function TypographyMui() {
       <Typography variant="overline" gutterBottom sx={{ display: 'block' }}>
         overline
       </Typography>
+      <Divider width='1080px' color='primary' />
     </Box>
   );
 }
